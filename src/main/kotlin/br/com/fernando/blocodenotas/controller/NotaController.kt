@@ -32,10 +32,10 @@ class NotaController {
         notaService.apagar(id)
     }
 
-    /*@GetMapping("/{id}")
+    @GetMapping("/{id}")
     fun buscarPor(@PathVariable("id") id:String):Nota {
-        notaService.buscarPor(id)
-    }*/
+        return notaService.buscarPor(id)
+    }
 
     @GetMapping("/titulo/{titulo}")
     fun buscaPorTitulo(@PathVariable("titulo") titulo : String) : List<Nota>{
